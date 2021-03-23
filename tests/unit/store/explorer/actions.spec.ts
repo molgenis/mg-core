@@ -247,6 +247,7 @@ jest.mock('@/lib/client', () => {
     get: (url: string) => {
       const mockResp = mockResponses[url]
       if (!mockResp) {
+        // eslint-disable-next-line no-console
         console.warn(`mock url (${url}) called but not found in ${JSON.stringify(mockResponses, null, 4)}`)
       }
       return Promise.resolve(mockResp)
@@ -254,6 +255,7 @@ jest.mock('@/lib/client', () => {
     post: (url: string, postData) => {
       const mockRespons = mockPostResponses[url][JSON.stringify(postData)]
       if (!mockRespons) {
+        // eslint-disable-next-line no-console
         console.warn(`mock url (${url}) called but not found inz ${JSON.stringify(mockPostResponses, null, 4)}`)
       }
       return Promise.resolve(mockPostResponses[url][JSON.stringify(postData)])

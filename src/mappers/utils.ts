@@ -64,6 +64,7 @@ export const getFieldOptions = async (attribute: Attribute) => {
       return null
     }
   case 'bool':
+    // eslint-disable-next-line no-case-declarations
     const boolOptions: FilterOption[] = [
       { value: true, text: 'Yes' },
       { value: false, text: 'No' }
