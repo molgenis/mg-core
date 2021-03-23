@@ -1,0 +1,96 @@
+{
+  "name": "@molgenis-ui/mg-core",
+  "version": "1.0.0",
+  "license": "LGPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.html",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-report": "vue-cli-service build --report",
+    "lint:css": "stylelint \"src/**/*.vue\"",
+    "lint:js": "eslint \"{src/**/{*.ts,*.vue},tests/**/*.ts}\"",
+    "lint": "yarn lint-css;yarn lint-js",
+    "e2e": "vue-cli-service test:eq2e --mode test",
+    "unit": "vue-cli-service test:unit",
+    "clean": "vue-cli-service test:unit --clearCache",
+    "postversion": "vue-cli-service build",
+    "stylelint": "stylelint \"*src/**/*.vue\"",
+    "version": "yarn"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@molgenis-ui/components-library": "^2.4.1",
+    "@molgenis/molgenis-api-client": "^3.1.3",
+    "@molgenis/molgenis-i18n-js": "1.0.0",
+    "@molgenis/molgenis-ui-context": "^1.6.5",
+    "@molgenis/molgenis-ui-form": "^5.3.0",
+    "@molgenis/rsql": "^0.2.5",
+    "axios": "^0.19.2",
+    "bootstrap": "4.3.1",
+    "bootstrap-vue": "^2.17.3",
+    "core-js": "^3.6.5",
+    "font-awesome": "^4.7.0",
+    "jquery": "3.4.1",
+    "lz-string": "^1.4.4",
+    "popper.js": "^1.15.0",
+    "v-runtime-template": "^1.10.0",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.6",
+    "vue-slider-component": "^3.2.9",
+    "vue2-daterange-picker": "^0.6.1",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.1.1",
+    "vuex-router-sync": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "@vue/cli-plugin-babel": "~4.5.7",
+    "@vue/cli-plugin-e2e-nightwatch": "^3.9.0",
+    "@vue/cli-plugin-router": "~4.5.7",
+    "@vue/cli-plugin-typescript": "^3.9.0",
+    "@vue/cli-plugin-unit-jest": "^4.5.11",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/test-utils": "^1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^26.6.3",
+    "banner-webpack-plugin": "^0.2.3",
+    "chromedriver": "^76.0.1",
+    "eslint": "^7.22.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-sort-class-members": "^1.9.0",
+    "eslint-plugin-vue": "^7.8.0",
+    "geckodriver": "^1.21.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^10.0.2",
+    "stylelint": "^13.12.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0",
+    "testdouble": "^3.16.1",
+    "ts-jest": "26.5.3",
+    "typescript": "3.9.3",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "resolutions": {
+    "handlebars": "4.5.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

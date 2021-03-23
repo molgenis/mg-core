@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="6">
+
+  <testsuite name="test"
+    errors="0" failures="0" hostname="" id="" package="test" skipped="0"
+    tests="6" time="30.12" timestamp="Thu, 18 Jun 2020 07:38:35 GMT">
+  
+    <testcase name="show table layout and card layout" classname="test" time="5.720" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="add and remove items from shoppingcart" classname="test" time="5.247" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should display custom card" classname="test" time="4.339" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="expand and collapse default card in card layout" classname="test" time="4.633" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="open/close filters sidebar" classname="test" time="4.685" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Add and remove filters" classname="test" time="5.493" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
