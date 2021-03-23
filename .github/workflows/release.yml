@@ -43,6 +43,7 @@ jobs:
     - name: Run tests
       run: |
         yarn unit
+
     - name: Publish new release
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
