@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/molgenis/mg-core/compare/v1.0.1...v1.0.2) (2021-03-23)
+
+
+### Bug Fixes
+
+* add npm publish ([c32215a](https://github.com/molgenis/mg-core/commit/c32215ac593154cbd2a9b900ad77df86f6ca879c))
+
 ## [1.0.1](https://github.com/molgenis/mg-core/compare/v1.0.0...v1.0.1) (2021-03-23)
 
 
