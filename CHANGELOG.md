@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/molgenis/mg-core/compare/v1.0.0...v1.0.1) (2021-03-23)
+
+
+### Bug Fixes
+
+* use yarn cache ([c569c08](https://github.com/molgenis/mg-core/commit/c569c080c3fa5783f82eb0f57462bcde3f7a4997))
+
 # 1.0.0 (2021-03-23)
 
 
