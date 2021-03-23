@@ -2,7 +2,8 @@ name: test
 
 on:
   pull_request:
-    branches: [ main ]
+  push:
+    branches: [ develop ]
 
 jobs:
   build:
@@ -20,9 +21,20 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install packages
+    - name: Get Yarn cache directory
+      id: yarn-cache-dir-path
+      run: echo "::set-output name=dir::$(yarn cache dir)"
+
+    - name: Use Yarn cache
+      uses: actions/cache@v2
+      id: yarn-cache
+      with:
+        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+        key: ${{ runner.os }}-yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
+
+    - name: Install dependencies
       run: |
-        yarn install
+        yarn install --prefer-offline --frozen-lockfile
 
     - name: Lint code
       run: |
