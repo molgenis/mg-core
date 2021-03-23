@@ -1,3 +1,11 @@
+# 1.0.0 (2021-03-23)
+
+
+### Bug Fixes
+
+* add missing semantic-release plugins ([1d67be1](https://github.com/molgenis/mg-core/commit/1d67be114111c65d5354bc483afb7b7d553c57b5))
+* add release rules ([8145e4c](https://github.com/molgenis/mg-core/commit/8145e4c30dc8c45e9f0e1782c3e6e781513560a2))
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
