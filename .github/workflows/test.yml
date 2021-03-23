@@ -1,7 +1,7 @@
-name: main
+name: test
 
 on:
-  push:
+  pull_request:
     branches: [ main ]
 
 jobs:
@@ -20,10 +20,15 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install packages & verify code
+    - name: Install packages
       run: |
         yarn install
+
+    - name: Lint code
+      run: |
         yarn lint:css
         yarn lint:js
-        yarn unit
 
+    - name: Run tests
+      run: |
+        yarn unit
