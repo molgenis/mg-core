@@ -34,7 +34,7 @@
     "@molgenis/molgenis-ui-context": "^1.6.5",
     "@molgenis/molgenis-ui-form": "^5.3.0",
     "@molgenis/rsql": "^0.2.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "4.3.1",
     "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.5",
